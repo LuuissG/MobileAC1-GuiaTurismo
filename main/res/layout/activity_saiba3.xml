@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Saiba3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La Doc Gastronomia"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/pladoc" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/pladoc2" />
+
+            <TextView
+                android:id="@+id/txtresumo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="O La Doc Gastronomia é um restaurante em Sorocaba que se destaca pela alta cozinha com influências italianas e mediterrâneas. Oferece um ambiente sofisticado e um cardápio variado com pratos que incluem massas artesanais e carnes nobres, tudo preparado com ingredientes de qualidade. É ideal para quem busca uma experiência gastronômica requintada." />
+
+            <Button
+                android:id="@+id/bntAbrirMapa3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abrir Mapa" />
+
+            <Button
+                android:id="@+id/bntAbrirSite3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abrir Site" />
+
+            <Button
+                android:id="@+id/bntligar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
